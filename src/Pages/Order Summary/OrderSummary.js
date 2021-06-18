@@ -58,6 +58,12 @@ function App() {
         setPayment(true);
         // setShowSuccessModal(true);
         setShowModal(true);
+        let postData = {
+          paymentId,
+          orderId,
+          signatureId,
+        };
+        sendSuccess(postData);
       },
       prefill: {
         name: "Siddhanth Pathak",
@@ -85,6 +91,10 @@ function App() {
       console.log("PAYMENT ERR:", response);
       setPayment(false);
       setPaymentErr(response);
+      let postData = {
+        data: response.error.description,
+      };
+      sendFailure(postData);
       // setShowFailureModal(true);
       setShowModal(true);
     });
@@ -94,6 +104,12 @@ function App() {
     // };
   };
 
+  const sendSuccess = async (postData) => {
+    await axios.post("url", postData);
+  };
+  const sendFailure = async (postData) => {
+    await axios.post("url", postData);
+  };
   function MyVerticallyCenteredModal(props) {
     return (
       <Modal
