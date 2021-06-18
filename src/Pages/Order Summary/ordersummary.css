@@ -1,0 +1,14 @@
+@media only screen and (max-width: 425px) {
+  .hideDesc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hideDesc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

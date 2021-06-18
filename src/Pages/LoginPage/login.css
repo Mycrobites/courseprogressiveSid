@@ -1,0 +1,193 @@
+.login {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 2fr 4fr;
+}
+
+.login_sidebar {
+  background-color: #6f389f;
+  padding: 50px;
+}
+
+.login__logo {
+  width: 10vw;
+  height: 10vh;
+  margin-bottom: 10rem;
+}
+
+.login__Main {
+  padding: 7rem 15rem 0rem 15rem;
+  background-color: #f2f2f2;
+}
+
+.login__container {
+  margin-bottom: 30px;
+  display: flex;
+  background-color: white;
+  border: 3px solid black;
+  width: 30vw;
+  border-radius: 50px;
+}
+
+.container__SignIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 2.1em;
+}
+.container__SignIn > a {
+  color: black !important;
+}
+.container__SignIn > a:hover {
+  color: black !important;
+}
+.container__SignIn.Selected > a:hover {
+  color: white !important;
+}
+.Selected {
+  background-color: #6f389f;
+}
+.Selected > a {
+  color: white !important;
+}
+
+.loginForm {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.signUpForm {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.signUpForm > input {
+  height: 6vh;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.signUpForm > select {
+  height: 6vh;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.loginForm > input {
+  height: 8vh;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.loginForm > select {
+  height: 8vh;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.login__btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  background-color: #6f389f;
+}
+
+.perks__desc {
+  color: white;
+
+  padding: 20px;
+}
+.btn__Google {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2em !important;
+}
+.perks__desc > h3 {
+  margin-bottom: 20px;
+}
+.perks__desc > ul > li {
+  color: white;
+  padding: 5px;
+  opacity: 0.8;
+}
+
+.kep-login-facebook {
+  width: 100%;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+}
+
+.login_Span {
+  margin: 2rem 15rem;
+}
+
+/* Responsive Design  */
+
+@media all and (max-width: 1000px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login_sidebar {
+    padding: 0px;
+  }
+
+  .login__logo {
+    margin: 1rem 5rem;
+    width: 55vw;
+  }
+  .login__Main {
+    padding: 1rem;
+  }
+  .login__container {
+    width: 67vw;
+    margin: 20px 40px;
+  }
+  .container__SignIn {
+    font-size: 1.3em;
+  }
+  .login__Main > span {
+    margin-left: 40px;
+  }
+  .login_Span {
+    margin: 0rem 9.5rem;
+  }
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .register > a {
+    margin-right: 0rem !important;
+    margin-bottom: 15px;
+  }
+  .perks__desc {
+    padding: 10px 30px;
+  }
+}
